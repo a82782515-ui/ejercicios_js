@@ -1,0 +1,3 @@
+const form=document.getElementById("form"),r=document.getElementById("resultado");
+form.addEventListener("submit",e=>{e.preventDefault();const x=String(Math.abs(Number(num.value)));const ok=x.length===3&&x===x.split("").reverse().join("");
+r.innerHTML=`<span class="titulo">Resultado</span><span class="valor">${x.length===3?(ok?x+" es CAPICÚA":x+" NO es capicúa"):"Debe ingresar 3 cifras"}</span>`;r.classList.add("show")});

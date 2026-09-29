@@ -1,0 +1,2 @@
+const form=document.getElementById("form"),r=document.getElementById("resultado");
+form.addEventListener("submit",e=>{e.preventDefault();const n=Number(num.value);let f=1;if(Number.isInteger(n)&&n>=0){for(let i=2;i<=n;i++)f*=i;r.innerHTML=`<span class="titulo">Resultado</span><span class="valor">${n}! = ${f}</span>`}else r.innerHTML=`<span class="titulo">Resultado</span><span class="valor">Ingrese un entero ≥ 0</span>`;r.classList.add("show")});

@@ -1,0 +1,3 @@
+const form=document.getElementById("form"),r=document.getElementById("resultado");
+form.addEventListener("submit",e=>{e.preventDefault();const p=(Number(n1.value)+Number(n2.value)+Number(n3.value))/3;
+r.innerHTML=`<span class="titulo">Resultado</span><div class="fila"><span>Promedio</span><b>${p.toFixed(2)}</b></div><span class="valor">${p>=10.5?"APROBADO":"DESAPROBADO"}</span>`;r.classList.add("show")});

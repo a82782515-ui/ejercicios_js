@@ -1,0 +1,3 @@
+const form=document.getElementById("form"),r=document.getElementById("resultado");
+form.addEventListener("submit",e=>{e.preventDefault();const a=Number(n1.value),b=Number(n2.value);
+r.innerHTML=`<span class="titulo">Resultados</span><div class="fila"><span>Suma</span><b>${a+b}</b></div><div class="fila"><span>Resta</span><b>${a-b}</b></div><div class="fila"><span>Multiplicación</span><b>${a*b}</b></div><div class="fila"><span>División</span><b>${b===0?"No se puede":(a/b).toFixed(2)}</b></div>`;r.classList.add("show")});
